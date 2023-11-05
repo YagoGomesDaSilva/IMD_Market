@@ -1,4 +1,4 @@
-package br.com.god.imd_market;
+package br.com.god.imd_market.UserAuthentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import br.com.god.imd_market.R;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText et_UserName, et_PassWordName;

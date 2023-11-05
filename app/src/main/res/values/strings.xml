@@ -1,12 +1,24 @@
 <resources>
     <string name="app_name">IMD_Market</string>
 
+    <string name="btn_Back">Voltar</string>
+
     <!--User Authentication-->
     <string name="et_UserName">UserName</string>
     <string name="et_PassWordName">PassWordName</string>
     <string name="btn_SignIn">LogIn</string>
     <string name="btn_SignOn">Cadastrar</string>
-    <string name="btn_Back">Voltar</string>
 
+    <!--Main Activity-->
+    <string name="btn_RegisterProduct">Cadastrar Produto</string>
+    <string name="btn_ListProduct">Listar Produto</string>
+    <string name="btn_DeleteProduct">Deletar Produto</string>
+    <string name="btn_UpdateProduct">Atualizar Produto</string>
+
+    <!--CRUD-->
+    <string name="btn_Register_CRUD">Cadastrar</string>
+    <string name="btn_List_CRUD">Listar</string>
+    <string name="btn_Delete_CRUD">Deletar</string>
+    <string name="btn_Update_CRUD">Atualizar</string>
 
 </resources>
