@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IMD_Market</string>
+
+    <!--User Authentication-->
+    <string name="et_UserName">UserName</string>
+    <string name="et_PassWordName">PassWordName</string>
+    <string name="btn_SignIn">LogIn</string>
+    <string name="btn_SignOn">Cadastrar</string>
+    <string name="btn_Back">Voltar</string>
+
+
+</resources>
