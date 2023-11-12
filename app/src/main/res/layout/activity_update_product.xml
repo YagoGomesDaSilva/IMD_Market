@@ -7,13 +7,66 @@
     tools:context=".CRUD.UpdateProductActivity">
 
 
+    <EditText
+        android:id="@+id/codigoProdutoAtt"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="@string/hint_codigo"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/estoqueProdutoAtt"
+        android:layout_width="217dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/hint_estoque"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoProdutoAtt" />
+
+    <EditText
+        android:id="@+id/descricaoProdutoAtt"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_descricao"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProdutoAtt" />
+
+    <EditText
+        android:id="@+id/nomeProdutoAtt"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/hint_nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigoProdutoAtt" />
+
     <Button
         android:id="@+id/btn_BackUpdate_CRUD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="40dp"
         android:text="@string/btn_Back"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Update_CRUD" />
 
@@ -21,9 +74,9 @@
         android:id="@+id/btn_Update_CRUD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="52dp"
         android:text="@string/btn_Update_CRUD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/estoqueProdutoAtt" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,7 @@
         android:id="@+id/btn_Register_CRUD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/btn_Register_CRUD"
         app:layout_constraintBottom_toTopOf="@+id/btn_BackRegister_CRUD"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,59 +25,54 @@
         android:text="@string/btn_Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/codigoProduto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="227dp"
+        android:layout_height="55dp"
         android:layout_marginTop="232dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/hint_codigo"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nomeProduto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="224dp"
+        android:layout_height="56dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/hint_nome"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/codigoProduto" />
 
     <EditText
         android:id="@+id/descricaoProduto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="231dp"
+        android:layout_height="62dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="start|top"
-        android:inputType="textMultiLine"
         android:hint="@string/hint_descricao"
+        android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomeProduto" />
 
     <EditText
         android:id="@+id/estoqueProduto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="236dp"
+        android:layout_height="67dp"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/hint_estoque"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descricaoProduto" />
 </androidx.constraintlayout.widget.ConstraintLayout>
