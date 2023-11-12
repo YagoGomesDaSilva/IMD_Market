@@ -6,19 +6,30 @@
     <!--User Authentication-->
     <string name="et_UserName">UserName</string>
     <string name="et_PassWordName">PassWordName</string>
-    <string name="btn_SignIn">LogIn</string>
+    <string name="btn_SignIn">Login</string>
     <string name="btn_SignOn">Cadastrar</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_forgot_login_or_password">Esqueci minha senha/login</string>
+    <string name="hint_old_password">Senha antiga</string>
+    <string name="hint_new_password">Nova senha</string>
+    <string name="update_password">Atualizar</string>
+    <string name="back">Voltar</string>
 
     <!--Main Activity-->
     <string name="btn_RegisterProduct">Cadastrar Produto</string>
-    <string name="btn_ListProduct">Listar Produto</string>
+    <string name="btn_ListProduct">Listar Produtos</string>
     <string name="btn_DeleteProduct">Deletar Produto</string>
     <string name="btn_UpdateProduct">Atualizar Produto</string>
 
     <!--CRUD-->
     <string name="btn_Register_CRUD">Cadastrar</string>
+    <string name="hint_codigo">Código do produto</string>
+    <string name="hint_nome">Nome do produto</string>
+    <string name="hint_descricao">Descrição do produto</string>
+    <string name="hint_estoque">Estoque do produto</string>
     <string name="btn_List_CRUD">Listar</string>
     <string name="btn_Delete_CRUD">Deletar</string>
     <string name="btn_Update_CRUD">Atualizar</string>
-
+    <string name="title_activity_forgot_login">ForgotLoginActivity</string>
 </resources>

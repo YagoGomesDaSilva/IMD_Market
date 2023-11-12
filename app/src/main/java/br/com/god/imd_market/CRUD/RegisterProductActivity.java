@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import br.com.god.imd_market.MainActivity;
 import br.com.god.imd_market.R;
@@ -13,6 +14,8 @@ import br.com.god.imd_market.R;
 public class RegisterProductActivity extends AppCompatActivity {
 
     Button btn_Register_CRUD, btn_BackRegister_CRUD;
+
+    TextView codigoProduto, nomeProduto, descricaoProduto, estoqueProduto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

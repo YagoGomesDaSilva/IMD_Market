@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserAuthentication.LoginActivity">
@@ -11,18 +10,17 @@
       android:id="@+id/btn_SignIn"
       android:layout_width="127dp"
       android:layout_height="65dp"
-      android:layout_marginBottom="48dp"
+      android:layout_marginBottom="20dp"
       android:text="@string/btn_SignIn"
       app:layout_constraintBottom_toTopOf="@+id/btn_SignOn"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent" />
 
   <Button
       android:id="@+id/btn_SignOn"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginBottom="116dp"
+      android:layout_marginBottom="176dp"
       android:text="@string/btn_SignOn"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +33,7 @@
       android:layout_height="67dp"
       android:layout_marginTop="260dp"
       android:ems="10"
-      android:hint="@string/et_PassWordName"
+      android:hint="@string/hint_login"
       android:inputType="text"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.497"
@@ -47,11 +45,26 @@
       android:layout_width="234dp"
       android:layout_height="63dp"
       android:ems="10"
-      android:hint="@string/et_PassWordName"
+      android:hint="@string/hint_password"
+      android:inputType="textPassword"
       app:layout_constraintBottom_toTopOf="@+id/btn_SignIn"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.497"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/et_UserName"
       app:layout_constraintVertical_bias="0.493" />
+
+  <TextView
+      android:id="@+id/btn_forgot_login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="140dp"
+      android:text="@string/btn_forgot_login_or_password"
+      android:textColorLink="@color/blue"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
