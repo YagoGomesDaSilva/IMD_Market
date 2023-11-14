@@ -32,13 +32,6 @@ public class MainActivity extends AppCompatActivity {
         OnClickListenerSetCRUD(this.btn_ListProduct, ListProductActivity.class);
         OnClickListenerSetCRUD(this.btn_DeleteProduct, DeleteProductActivity.class);
         OnClickListenerSetCRUD(this.btn_UpdateProduct, UpdateProductActivity.class );
-
-
-        SharedPreferences sharedPreferences = getSharedPreferences("initialCredentials", Context.MODE_PRIVATE);
-
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("admin", "admin");
-        editor.commit();
     }
 
     private void OnClickListenerSetCRUD(Button btn, Class<?> cls ) {

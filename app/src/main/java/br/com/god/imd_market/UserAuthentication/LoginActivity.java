@@ -36,6 +36,12 @@ public class LoginActivity extends AppCompatActivity {
         this.OnClickListenerSignOn(btn_SignOn);
         this.OnClickListenerForgotLogin(btn_forgot_login);
 
+        SharedPreferences sharedPreferences = getSharedPreferences("initialCredentials", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("admin", "admin");
+        editor.clear();
+        editor.commit();
     }
 
     private void OnClickListenerSignIn(Button btn_SignIn, EditText et_UserName, EditText et_PassWordName) {
