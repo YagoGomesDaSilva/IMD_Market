@@ -1,7 +1,7 @@
 package br.com.god.imd_market.data;
 
 public class Produto {
-    private String codigoProduto;
+    private int codigoProduto;
 
     private String nomeProduto;
 
@@ -9,11 +9,20 @@ public class Produto {
 
     private int estoque;
 
-    public String getCodigoProduto() {
+    public Produto() {}
+
+    public Produto(int codigoProduto, String nomeProduto, String descricaoProduto, int estoque) {
+        this.codigoProduto = codigoProduto;
+        this.nomeProduto = nomeProduto;
+        this.descricaoProduto = descricaoProduto;
+        this.estoque = estoque;
+    }
+
+    public int getCodigoProduto() {
         return codigoProduto;
     }
 
-    public void setCodigoProduto(String codigoProduto) {
+    public void setCodigoProduto(int codigoProduto) {
         this.codigoProduto = codigoProduto;
     }
 
