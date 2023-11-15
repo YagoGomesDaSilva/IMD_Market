@@ -68,7 +68,7 @@ public class RegisterProductActivity extends AppCompatActivity {
                     nomeProduto.setText("");
                     descricaoProduto.setText("");
                     estoqueProduto.setText("");
-
+                    BackIntent();
                 }
                 else {
                     Toast.makeText(RegisterProductActivity.this, "Preencha todos os campos!", Toast.LENGTH_LONG).show();
