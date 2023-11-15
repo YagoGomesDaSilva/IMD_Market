@@ -2,6 +2,8 @@
     <string name="app_name">IMD_Market</string>
 
     <string name="btn_Back">Voltar</string>
+    <string name="tv_Titulo">IMD_MARKET</string>
+    <string name="tv_msg">O que deseja fazer?</string>
 
     <!--User Authentication-->
     <string name="et_UserName">UserName</string>

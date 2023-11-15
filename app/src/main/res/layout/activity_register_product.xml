@@ -6,44 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".CRUD.RegisterProductActivity">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:text="@string/tv_Titulo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btn_Register_CRUD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:text="@string/btn_Register_CRUD"
-        app:layout_constraintBottom_toTopOf="@+id/btn_BackRegister_CRUD"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/estoqueProduto" />
 
     <Button
         android:id="@+id/btn_BackRegister_CRUD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:text="@string/btn_Back"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Register_CRUD" />
 
     <EditText
         android:id="@+id/codigoProduto"
-        android:layout_width="227dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="232dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="35dp"
         android:ems="10"
         android:hint="@string/hint_codigo"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/nomeProduto"
-        android:layout_width="224dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/hint_nome"
         android:inputType="text"
@@ -53,9 +67,9 @@
 
     <EditText
         android:id="@+id/descricaoProduto"
-        android:layout_width="231dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/hint_descricao"
@@ -66,13 +80,14 @@
 
     <EditText
         android:id="@+id/estoqueProduto"
-        android:layout_width="236dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/hint_estoque"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descricaoProduto" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

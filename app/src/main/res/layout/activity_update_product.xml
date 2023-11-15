@@ -7,24 +7,39 @@
     tools:context=".CRUD.UpdateProductActivity">
 
 
-    <EditText
-        android:id="@+id/codigoProdutoAtt"
-        android:layout_width="224dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="180dp"
-        android:ems="10"
-        android:hint="@string/hint_codigo"
-        android:inputType="number"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:text="@string/tv_Titulo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/codigoProdutoAtt"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/hint_codigo"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
         android:id="@+id/estoqueProdutoAtt"
-        android:layout_width="217dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/hint_estoque"
         android:inputType="number"
@@ -34,9 +49,9 @@
 
     <EditText
         android:id="@+id/descricaoProdutoAtt"
-        android:layout_width="225dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/hint_descricao"
@@ -48,9 +63,9 @@
 
     <EditText
         android:id="@+id/nomeProdutoAtt"
-        android:layout_width="219dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/hint_nome"
         android:inputType="text"
@@ -61,20 +76,19 @@
 
     <Button
         android:id="@+id/btn_BackUpdate_CRUD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:text="@string/btn_Back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Update_CRUD" />
 
     <Button
         android:id="@+id/btn_Update_CRUD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
         android:text="@string/btn_Update_CRUD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

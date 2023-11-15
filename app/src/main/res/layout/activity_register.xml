@@ -6,11 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".UserAuthentication.RegisterActivity">
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:text="@string/tv_Titulo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/et_PassWordName_SignOn"
-        android:layout_width="234dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="@string/et_PassWordName"
         android:inputType="textPassword"
@@ -21,20 +36,20 @@
 
     <Button
         android:id="@+id/btn_Back_SignOn"
-        android:layout_width="127dp"
-        android:layout_height="55dp"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
         android:text="@string/btn_Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Register_SignOn"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintVertical_bias="0.251" />
 
     <Button
         android:id="@+id/btn_Register_SignOn"
         android:layout_width="125dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="116dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="75dp"
         android:text="@string/btn_SignOn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,14 +57,15 @@
 
     <EditText
         android:id="@+id/et_UserName_SignOn"
-        android:layout_width="233dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="220dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="@string/et_UserName"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
