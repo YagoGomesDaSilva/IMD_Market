@@ -1,12 +1,15 @@
 package br.com.god.imd_market.CRUD;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -59,7 +62,7 @@ public class ListProductActivity extends AppCompatActivity {
 
         Cursor consulta = banco.query("PRODUTOS", null, null, null, null, null, null);
 
-        List<Produto> produtos = new ArrayList<>();
+        final List<Produto> produtos = new ArrayList<>();
         while(consulta.moveToNext()) {
             int itemId = consulta.getInt(consulta.getColumnIndexOrThrow("ID_CODIGO_PRODUTO"));
             String nome = consulta.getString(consulta.getColumnIndexOrThrow("NOME"));
@@ -68,7 +71,33 @@ public class ListProductActivity extends AppCompatActivity {
 
             produtos.add(new Produto(itemId, nome, descricao, estoque));
         }
-        //TODO: popular o ListView com o ArrayList de Produtos
+
+        List<String> produtosParaListView = new ArrayList<>();
+
+        for (Produto produto: produtos) {
+            produtosParaListView.add(produto.getNomeProduto());
+        }
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, produtosParaListView);
+        listViewProducts.setAdapter(adapter);
+
         consulta.close();
+
+        listViewProducts.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(ListProductActivity.this);
+                builder.setTitle("Item " + (position+1))
+                        .setMessage(
+                                "Código: " + produtos.get(position).getCodigoProduto() + "\n" +
+                                "Nome: " + produtos.get(position).getNomeProduto() + "\n" +
+                                "Descrição: " + produtos.get(position).getDescricaoProduto() + "\n" +
+                                "Estoque: " + produtos.get(position).getEstoque()
+                        )
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {}});
+                builder.create().show();
+            }
+        });
     }
 }
